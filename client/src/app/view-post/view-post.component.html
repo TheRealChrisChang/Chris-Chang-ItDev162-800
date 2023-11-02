@@ -1,0 +1,10 @@
+    <mat-card class="post-card">
+        <mat-card-title>{{post.title}}</mat-card-title>
+        <mat-card-content>
+            <p>{{post.date | date : 'longDate'}}</p>
+            <p>{{post.body}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button routerLink="/">Back</button>
+        </mat-card-actions>
+    </mat-card>

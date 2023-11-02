@@ -1,0 +1,13 @@
+<div *ngFor="let post of posts">
+    <mat-card class="post-card" routerLink="/posts/{{post.id}}">
+        <mat-card-title>{{post.title}}</mat-card-title>
+        <mat-card-content>
+            <p>{{post.date | date : 'longDate'}}</p>
+            <p>{{post.body}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
